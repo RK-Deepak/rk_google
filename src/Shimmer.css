@@ -1,0 +1,48 @@
+.shimmer-container {
+    width: 85%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shimmer-heading {
+    height: 24px;
+    width: 80%;
+    margin-bottom: 16px;
+    background: linear-gradient(to right, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .shimmer-paragraph {
+    height: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
+  .shimmer-fade-heading {
+    height: 24px;
+    width: 60%;
+    margin-top: 16px;
+    background: linear-gradient(to right, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer-fade 1.5s infinite;
+  }
+  
+  @keyframes shimmer {
+    to {
+      background-position: -200% 0;
+    }
+  }
+  
+  @keyframes shimmer-fade {
+    to {
+      opacity: 0.5;
+    }
+  }
+  

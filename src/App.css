@@ -1,0 +1,104 @@
+.search_buttons button 
+{
+    border-color: rgb(206, 206, 206);
+    background-color: rgba(202, 202, 202, 0.397);
+    padding: 5px 8px;
+    
+    color: black;
+    font-size: small;
+    text-transform: inherit
+    ;
+    
+}
+.search_buttons button:hover
+{
+   background-color: rgba(177, 177, 177, 0.171);
+   border-color: rgb(206, 206, 206);
+   
+}
+.searchbar_input:hover
+{
+    box-shadow: 1px  1px 6px rgb(212, 212, 212);
+}
+/* //if we move on search bar we hide this btns */
+.btnhidden
+{
+    display: none !important;
+}
+
+@keyframes shimmer-gradient {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  /* image  shimmer */
+  .animate-shimmer-gradient {
+    animation: shimmer-gradient 1.5s infinite;
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 50%, #f0f0f0 100%);
+    background-size: 200% 100%;
+  }
+  
+
+
+.search_page .search_page_header .searchbar_input 
+{
+   
+    width: 100%;
+    
+   
+}
+.boxshadow 
+{
+    box-shadow: 1px 1px 3px black;
+}
+.listeningeffect {
+   
+  border-radius: 100%; /* Ensure it's a perfect circle */
+   /* Set the initial background color */
+  overflow: hidden; /* Hide overflow to ensure the animation starts from the center */
+ 
+}
+
+.listeningeffect:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 5, 5, 0.514); /* Set the background color to match */
+  border-radius: 100%; /* Ensure it's a perfect circle */
+  transform: translate(-50%, -50%);
+  animation: expandCircle 2s linear infinite; /* Apply the animation */
+}
+
+@keyframes expandCircle {
+  0% {
+    width: 0%; /* Start with no width */
+    height: 0%; /* Start with no height */
+  }
+  25% {
+    width: 20%; /* Expand to double the size */
+    height: 20%; /* Expand to double the size */
+  }
+  50%{
+    width: 40%; /* Expand to double the size */
+    height: 40%; 
+  }
+  75% 
+  {
+    width: 20%; /* Expand to double the size */
+    height: 20%; 
+  }
+  100%
+  {
+    width: 0%; /* Expand to double the size */
+    height: 0%;
+  }
+
+}
+
+
